@@ -28,132 +28,159 @@ internal class Program
         livro3.AnoLancamento = 1898;
          */
 
-        //Instanciar um Objeto do Tipo Aluno
-        ALuno aluno1 = new ALuno();
-        ALuno aluno2 = new ALuno();
-        ALuno aluno3 = new ALuno();
+        ////Instanciar um Objeto do Tipo Aluno
+        //ALuno aluno1 = new ALuno();
+        //ALuno aluno2 = new ALuno();
+        //ALuno aluno3 = new ALuno();
 
-        //Preencher os atributos do objeto
-        aluno1.Nome = "Gabriela";
-        aluno1.RM = "4449TI";
-        aluno1.Email = "gabriela.caputti@aluno.senai.br";
-        aluno1.Nascimento = new DateOnly(2008, 03, 16);
+        ////Preencher os atributos do objeto
+        //aluno1.Nome = "Gabriela";
+        //aluno1.RM = "4449TI";
+        //aluno1.Email = "gabriela.caputti@aluno.senai.br";
+        //aluno1.Nascimento = new DateOnly(2008, 03, 16);
 
-        aluno2.Nome = "Livia";
-        aluno2.RM = "3776TI";
-        aluno2.Email = "lormeleze@gmail.com";
-        aluno2.Nascimento = new DateOnly(2007, 11, 27);
+        //aluno2.Nome = "Livia";
+        //aluno2.RM = "3776TI";
+        //aluno2.Email = "lormeleze@gmail.com";
+        //aluno2.Nascimento = new DateOnly(2007, 11, 27);
 
-        aluno3.Nome = "Ana Clara Lopes";
-        aluno3.RM = "3489TI";
-        aluno3.Email = "anchiaramonte@gmail.com";
-        aluno3.Nascimento = new DateOnly(2007, 05, 20);
+        //aluno3.Nome = "Ana Clara Lopes";
+        //aluno3.RM = "3489TI";
+        //aluno3.Email = "anchiaramonte@gmail.com";
+        //aluno3.Nascimento = new DateOnly(2007, 05, 20);
 
-        //Imprimir na tela
-        Console.WriteLine("Aluno 1");
-        Console.WriteLine("Nome: " + aluno1.Nome);
-        Console.WriteLine("RM: " + aluno1.RM);
-        Console.WriteLine("E-mail: " + aluno1.Email);
-        Console.WriteLine("Data de nascimento: " + aluno1.Nascimento);
-        Console.WriteLine("==========================================");
+        ////Imprimir na tela
+        //Console.WriteLine("Aluno 1");
+        //Console.WriteLine("Nome: " + aluno1.Nome);
+        //Console.WriteLine("RM: " + aluno1.RM);
+        //Console.WriteLine("E-mail: " + aluno1.Email);
+        //Console.WriteLine("Data de nascimento: " + aluno1.Nascimento);
+        //Console.WriteLine("==========================================");
 
-        Console.WriteLine("Aluno 2");
-        Console.WriteLine("Nome: " + aluno2.Nome);
-        Console.WriteLine("RM: " + aluno2.RM);
-        Console.WriteLine("E-mail: " + aluno2.Email);
-        Console.WriteLine("Data de nascimento: " + aluno2.Nascimento);
-        Console.WriteLine("==========================================");
+        //Console.WriteLine("Aluno 2");
+        //Console.WriteLine("Nome: " + aluno2.Nome);
+        //Console.WriteLine("RM: " + aluno2.RM);
+        //Console.WriteLine("E-mail: " + aluno2.Email);
+        //Console.WriteLine("Data de nascimento: " + aluno2.Nascimento);
+        //Console.WriteLine("==========================================");
 
-        Console.WriteLine("Aluno 3");
-        Console.WriteLine("Nome: " + aluno3.Nome);
-        Console.WriteLine("RM: " + aluno3.RM);
-        Console.WriteLine("E-mail: " + aluno3.Email);
-        Console.WriteLine("Data de nascimento: " + aluno3.Nascimento);
-        Console.WriteLine("==========================================");
+        //Console.WriteLine("Aluno 3");
+        //Console.WriteLine("Nome: " + aluno3.Nome);
+        //Console.WriteLine("RM: " + aluno3.RM);
+        //Console.WriteLine("E-mail: " + aluno3.Email);
+        //Console.WriteLine("Data de nascimento: " + aluno3.Nascimento);
+        //Console.WriteLine("==========================================");
 
 
-        //Instanciar um objeto do tipo Produto
-        Produto p1 = new Produto();
-        p1.Codigo = 123456;
-        p1.Nome = "Coca-Cola 2 Litros";
-        p1.Preco = 12.99;
-        p1.Estoque = 96;
-        //Chamar o metodo QuantidadedeEstoque 
-        p1.QuantidadeEstoque();
-        p1.Estoque = 85;
-        //Chamar o metodo QuantidadedeEstoque 
-        p1.QuantidadeEstoque();
+        ////Instanciar um objeto do tipo Produto
+        //Produto p1 = new Produto();
+        //p1.Codigo = 123456;
+        //p1.Nome = "Coca-Cola 2 Litros";
+        //p1.Preco = 12.99;
+        //p1.Estoque = 96;
+        ////Chamar o metodo QuantidadedeEstoque 
+        //p1.QuantidadeEstoque();
+        //p1.Estoque = 85;
+        ////Chamar o metodo QuantidadedeEstoque 
+        //p1.QuantidadeEstoque();
 
-        Console.WriteLine("==========================================");
-        Console.WriteLine();
+        //Console.WriteLine("==========================================");
+        //Console.WriteLine();
 
-        //Instanciar um objeto do tipo Carro 
-        Carro carro1 = new Carro();
+        ////Instanciar um objeto do tipo Carro 
+        //Carro carro1 = new Carro();
 
-        carro1.Marca = "Ferrari";
-        carro1.Modelo = "488";
-        carro1.Velocidade = 80;
+        //carro1.Marca = "Ferrari";
+        //carro1.Modelo = "488";
+        //carro1.Velocidade = 80;
 
-        carro1.Acelerar();
-        carro1.Acelerar();
-        carro1.Acelerar();
-        carro1.Desacelerar();
+        //carro1.Acelerar();
+        //carro1.Acelerar();
+        //carro1.Acelerar();
+        //carro1.Desacelerar();
+
+        //Console.WriteLine("================================================");
+        //Console.WriteLine();
+
+        //Pessoa pessoa1 = new Pessoa();
+        //pessoa1.Nome = "José";
+        //pessoa1.Idade = 18;
+
+        //pessoa1.Envelhecer(5);
+        //pessoa1.Envelhecer(2);
+
+        //Console.WriteLine("================================================");
+        //Console.WriteLine();
+
+        //Funcionario func1 = new Funcionario();
+        //func1.Nome = "Luis Santos";
+        //func1.Idade = 20;
+        //func1.Cargo = "Aprendiz";
+        //func1.Salario = 1400.00;
+        //func1.ApresentarSe();
+
+        //Console.WriteLine("================================================");
+        //Console.WriteLine();
+
+        ////// Instanciar um objeto:
+        ////Animal animal1 = new Animal();
+
+        //////Inserindo dados no stributo:
+        ////animal1.Especie = "Cachorro";
+
+        //////Chamando o Metodo do Objeto
+        ////animal1.emitirSom();
+
+        //////Imprimindo a informação na tela
+        ////Console.WriteLine("O Animal" + animal1.Especie + " emitiu um som.");
+
+        //Gato gato = new Gato();
+        //gato.Nome = "Amorim";
+        //Console.WriteLine(gato.Nome + " faz:");
+        //gato.emitirSom();
+
+        //Console.WriteLine();
+
+        //Porco porco = new Porco();
+        //porco.Nome = "Rabicó";
+        //Console.WriteLine(porco.Nome + " faz:");
+        //porco.emitirSom();
+
+        //Console.WriteLine();
+
+        //Galinha galinha = new Galinha();
+        //galinha.Nome = "Chuck Bass";
+        //Console.WriteLine(galinha.Nome + " faz:");
+        //galinha.emitirSom();
 
         Console.WriteLine("================================================");
         Console.WriteLine();
 
-        Pessoa pessoa1 = new Pessoa();
-        pessoa1.Nome = "José";
-        pessoa1.Idade = 18;
+        Mago merlin = new Mago();
+        merlin.Nome = "Luiz";
+        merlin.Vida = 100;
+        merlin.Inteligencia = 87;
+        merlin.Agilidade = 55;
+        merlin.Forca = 62;
+        merlin.Nivel = 1;
 
-        pessoa1.Envelhecer(5);
-        pessoa1.Envelhecer(2);
+        Elfo elfo = new Elfo();
+        elfo.Nome = "Luna";
+        elfo.Vida = 100;
+        elfo.Inteligencia = 83;
+        elfo.Forca = 56;
+        elfo.Agilidade = 0;
+        elfo.Nivel = 1;
+
+        merlin.apresentarSe();
+        elfo.apresentarSe();
+
+        int ataque = merlin.atacar();
+        int defesa = merlin.defender();
+        Console.WriteLine("Força do Ataque: " + ataque);
+        Console.WriteLine("Força do Defesa: " + defesa);
 
         Console.WriteLine("================================================");
         Console.WriteLine();
-
-        Funcionario func1 = new Funcionario();
-        func1.Nome = "Luis Santos";
-        func1.Idade = 20;
-        func1.Cargo = "Aprendiz";
-        func1.Salario = 1400.00;
-        func1.ApresentarSe();
-
-        Console.WriteLine("================================================");
-        Console.WriteLine();
-
-        //// Instanciar um objeto:
-        //Animal animal1 = new Animal();
-
-        ////Inserindo dados no stributo:
-        //animal1.Especie = "Cachorro";
-
-        ////Chamando o Metodo do Objeto
-        //animal1.emitirSom();
-
-        ////Imprimindo a informação na tela
-        //Console.WriteLine("O Animal" + animal1.Especie + " emitiu um som.");
-
-        Gato gato = new Gato();
-        gato.Nome = "Amorim";
-        Console.WriteLine(gato.Nome + " faz:");
-        gato.emitirSom();
-
-        Console.WriteLine();
-
-        Porco porco = new Porco();
-        porco.Nome = "Rabicó";
-        Console.WriteLine(porco.Nome + " faz:");
-        porco.emitirSom();
-
-        Console.WriteLine();
-
-        Galinha galinha = new Galinha();
-        galinha.Nome = "Chuck Bass";
-        Console.WriteLine(galinha.Nome + " faz:");
-        galinha.emitirSom();
-
-        Personagem personagem = new Personagem();
-
     }
 }
