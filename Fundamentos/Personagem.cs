@@ -35,30 +35,8 @@ namespace Fundamentos
             pontosDefesa = (this.Nivel + this.Forca + (this.Agilidade * 2) + this.Inteligencia + this.Vida) / 6;
             return pontosDefesa;
         }
-        public virtual void batalhar(Personagem p)
-        {
-            int valorAtaque = this.atacar();
-            int valorDefesaInimigo = p.defender();
-            int danoDeVida = valorAtaque - valorDefesaInimigo;
-            if (danoDeVida <= 0)
-            {
-                danoDeVida = 1;
-            }
-            p.Vida = p.Vida - danoDeVida;
-            Console.WriteLine("Dano na Vida do Inimigo em " + danoDeVida);
-            Console.WriteLine("O nível de vida do Inimigo agora é " + p.Vida);
 
-            int valorAtaqueInimigo = p.atacar();
-            int valorDefesa = this.defender();
-            int danoDeVida2 = valorAtaqueInimigo - valorDefesa;
-            if (danoDeVida2 <= 0)
-            {
-                danoDeVida2 = 1;
-            }
-            this.Vida = this.Vida - danoDeVida2;
-            Console.WriteLine("Dano na Vida do Atacante em " + danoDeVida2);
-            Console.WriteLine("O nível de vida do Atacante agora é " + this.Vida);
-        }
+
         public virtual void batalhar(Personagem p)
         {
             bool vencedor = false;
@@ -66,20 +44,27 @@ namespace Fundamentos
             {
                 int valorAtaque = this.atacar();
                 int valorDefesa = p.defender();
-                int danoDeVida = valorAtaque - valorDefesaInimigo;
+                int danoDeVida = valorAtaque - valorDefesa;
                 if (danoDeVida <= 0)
                 {
                     danoDeVida = 1;
                 }
-                p.Vida = p.Vida - danodeVida;
-                Console.WriteLine("Dano na Vida do Inimigo em" + danodeVida);
+                p.Vida = p.Vida - danoDeVida;
+                Console.WriteLine("Dano na Vida do Inimigo em" + danoDeVida);
                 Console.WriteLine("O nível de vida do Inimigo agora é " + p.Vida);
 
                 int valorAtaqueInimigo = p.atacar();
-                int valorDefesa = this.defender();
-                int danoDeVida
+                int valorDefesa2 = this.defender();
+                int danoDeVida2 = valorAtaqueInimigo - valorDefesa;
+                if (danoDeVida2 <= 0)
+                {
+                    danoDeVida2 = 1;
+                }
+                this.Vida = this.Vida - danoDeVida2;
+                Console.WriteLine("Dano na Vida do Atacante em" + danoDeVida2);
+                Console.WriteLine("O nível de vida do Atacante agora é " + this.Vida);
 
-                    if (this.Vida <= 0)
+                if (this.Vida <= 0)
                 {
                     Console.WriteLine("O Personagem " + p.Nome + " Venceu!");
                     vencedor = true;
@@ -87,7 +72,7 @@ namespace Fundamentos
                 if (p.Vida < +0)
                 {
                     Console.WriteLine("O Personagem " + this.Nome + " Venceu!");
-                    encedor = true;
+                    vencedor = true;
                 }
             }
         }
