@@ -175,12 +175,8 @@ internal class Program
         merlin.apresentarSe();
         elfo.apresentarSe();
 
-        int ataque = merlin.atacar();
-        int defesa = merlin.defender();
-        Console.WriteLine("Força do Ataque: " + ataque);
-        Console.WriteLine("Força do Defesa: " + defesa);
-
         Console.WriteLine("================================================");
         Console.WriteLine();
+        merlin.batalhar(elfo);
     }
 }

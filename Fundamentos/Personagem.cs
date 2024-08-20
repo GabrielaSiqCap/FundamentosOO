@@ -40,7 +40,7 @@ namespace Fundamentos
         public virtual void batalhar(Personagem p)
         {
             bool vencedor = false;
-            while (vencedor == false) ;
+            while (vencedor == false)
             {
                 int valorAtaque = this.atacar();
                 int valorDefesa = p.defender();
