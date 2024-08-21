@@ -13,8 +13,6 @@ namespace Fundamentos
             Console.WriteLine("Bom dia independente do horário, meu nome é " + this.Nome + ", sou temido pela grande força  que é " + this.Forca + " embora tenha uma inteligência de " + this.Inteligencia + " e tenho agilidade de " + this.Agilidade + ". Nível:" + this.Nivel + " Vida:" + this.Vida + "!!");
             Console.WriteLine("====================================================================================");
         }
-
-
     }
 }
 

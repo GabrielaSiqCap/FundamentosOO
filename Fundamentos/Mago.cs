@@ -13,6 +13,5 @@ namespace Fundamentos
             Console.WriteLine("Prazer em conhecer-te, meu nome é " + this.Nome + ", sou temido pela inteligência estratégica que é " + this.Inteligencia + " embora tenha uma força de " + this.Forca + " e tenho agilidade de " + this.Agilidade + ". Nível:" + this.Nivel + " Vida:" + this.Vida + "!!");
             Console.WriteLine("====================================================================================");
         }
-
     }
 }

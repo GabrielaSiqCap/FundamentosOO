@@ -17,12 +17,14 @@ namespace Fundamentos
 
         //Métodos
         public virtual void apresentarSe() { }
-        //public virtual int evoluir(Personagem p)
-        //{
-        //    int evoluir = 0;
-        //    evoluir = p.batalhar < (this.Nivel + this.Forca + this.Agilidade + this.Inteligencia + this.Vida). 2;
-        //    return evoluir;
-        //}
+        public virtual void evoluir()
+        {
+            this.Nivel += 2;
+            this.Forca *= 2;
+            this.Inteligencia *= 2;
+            this.Agilidade *= 2;
+            Console.WriteLine("O Jogador " + this.Nome + " evoluiu para o nível " + this.Nivel + ". Seus novos valores são: \nAgilidade: " + this.Agilidade + "\nInteligência: " + this.Inteligencia + "\nForça: " + this.Forca);
+        }
         public virtual int atacar()
         {
             int pontosAtaque = 0;
@@ -35,8 +37,6 @@ namespace Fundamentos
             pontosDefesa = (this.Nivel + this.Forca + (this.Agilidade * 2) + this.Inteligencia + this.Vida) / 6;
             return pontosDefesa;
         }
-
-
         public virtual void batalhar(Personagem p)
         {
             bool vencedor = false;
@@ -50,7 +50,7 @@ namespace Fundamentos
                     danoDeVida = 1;
                 }
                 p.Vida = p.Vida - danoDeVida;
-                Console.WriteLine("Dano na Vida do Inimigo em" + danoDeVida);
+                Console.WriteLine("Dano na Vida do Inimigo em " + danoDeVida);
                 Console.WriteLine("O nível de vida do Inimigo agora é " + p.Vida);
 
                 int valorAtaqueInimigo = p.atacar();
@@ -61,18 +61,20 @@ namespace Fundamentos
                     danoDeVida2 = 1;
                 }
                 this.Vida = this.Vida - danoDeVida2;
-                Console.WriteLine("Dano na Vida do Atacante em" + danoDeVida2);
+                Console.WriteLine("Dano na Vida do Atacante em " + danoDeVida2);
                 Console.WriteLine("O nível de vida do Atacante agora é " + this.Vida);
 
                 if (this.Vida <= 0)
                 {
                     Console.WriteLine("O Personagem " + p.Nome + " Venceu!");
                     vencedor = true;
+                    p.evoluir();
                 }
                 if (p.Vida < +0)
                 {
                     Console.WriteLine("O Personagem " + this.Nome + " Venceu!");
                     vencedor = true;
+                    this.evoluir();
                 }
             }
         }

@@ -156,27 +156,27 @@ internal class Program
         Console.WriteLine("================================================");
         Console.WriteLine();
 
-        Mago merlin = new Mago();
-        merlin.Nome = "Luiz";
-        merlin.Vida = 100;
-        merlin.Inteligencia = 87;
-        merlin.Agilidade = 55;
-        merlin.Forca = 62;
-        merlin.Nivel = 1;
+        Mago mago1 = new Mago();
+        mago1.Nome = "Luiz";
+        mago1.Vida = 100;
+        mago1.Inteligencia = 87;
+        mago1.Agilidade = 55;
+        mago1.Forca = 62;
+        mago1.Nivel = 1;
 
-        Elfo elfo = new Elfo();
-        elfo.Nome = "Luna";
-        elfo.Vida = 100;
-        elfo.Inteligencia = 83;
-        elfo.Forca = 56;
-        elfo.Agilidade = 0;
-        elfo.Nivel = 1;
+        Elfo elfo1 = new Elfo();
+        elfo1.Nome = "Luna";
+        elfo1.Vida = 100;
+        elfo1.Inteligencia = 83;
+        elfo1.Forca = 56;
+        elfo1.Agilidade = 0;
+        elfo1.Nivel = 1;
 
-        merlin.apresentarSe();
-        elfo.apresentarSe();
+        mago1.apresentarSe();
+        elfo1.apresentarSe();
 
         Console.WriteLine("================================================");
         Console.WriteLine();
-        merlin.batalhar(elfo);
+        mago1.batalhar(elfo1);
     }
 }
